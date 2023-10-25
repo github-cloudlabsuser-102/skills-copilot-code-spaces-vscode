@@ -1,0 +1,85 @@
+# Create a GitHub action to email a report from a file at 6 a.m. daily
+# This action will run on the master branch
+# The report will be sent to the email address provided
+# The report will be sent from the email address provided
+# The report will be sent with the subject provided
+# The report will be sent with the body provided
+# The report will be sent with the file provided
+
+name: Deploy App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy App
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy App
+        uses: actions/checkout@v2
+      - name: Deploy App
+        run: |
+          cd deploy-app
+          npm install
+          npm run build
+          npm run deploy
+```
+
+## Create a GitHub action to email a report from a file at 6 a.m. daily
+
+```yaml
+# Path: daily-report.yml
+# Create a GitHub action to email a report from a file at 6 a.m. daily
+# This action will run on the master branch
+# The report will be sent to the email address provided
+# The report will be sent from the email address provided
+# The report will be sent with the subject provided
+# The report will be sent with the body provided
+# The report will be sent with the file provided
+
+name: Daily Report
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Daily Report
+    runs-on: ubuntu-latest
+    steps:
+      - name: Daily Report
+        uses: actions/checkout@v2
+      - name: Daily Report
+        run: |
+          cd daily-report
+          npm install
+          npm run build
+          npm run report
+```
+
+## Create a GitHub action to email a report from a file at 6 a.m. daily
+
+```yaml
+# Path: daily-report.yml
+# Create a GitHub action to email a report from a file at 6 a.m. daily
+# This action will run on the master branch
+# The report will be sent to the email address provided
+# The report will be sent from the email address provided
+# The report will be sent with the subject provided
+# The report will be sent with the body provided
+# The report will be sent with the file provided
+
+name: Daily Report
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
